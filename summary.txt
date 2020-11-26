@@ -1,0 +1,23 @@
+2 players:
+-opponent = computer
+-you
+
+-4다이스 이미지 필요 
+-roll three times possible -> 3 times done -> find out winner
+
+rule:
+-2개의 dice들을 중 1하나라도 1이 나오면 score이 0임.
+-2개의 dice값들이 서로 같으면 그 dice 값 x 4를 하면 됨. 
+-위의 rule들에 적용되지 않을 경우 그냥 2개의 dice값들을 서로 더한 값이 score임.
+
+
+UI
+-total score 을 계속 round마다 업데이트해야 함
+-현재 round의 score을 따로 보여줘야함
+-각 player기 dice를 돌리면 그 dice값들이 보여지게 끔 해야함 (그 round의 dice값들) 
+-user가 dice를 roll할 수 있는 그런 버튼이 필요함 (해당 round에 대한)
+-현재 round 정보도 필요함.
+-3round 이후에 게임이 종료되며 누가 winner인지 알려줘야 함. -> popup 창으로 설정. 
+-user가 게임 진행하다가 마음에 안들면 reset게임할 수 있는 버튼이 필요함 (처음부터 다시 하는 것) <- (버튼 이름만 바꾸면 됨)> user 게임을 처음으로 진행하는 그런 버튼이 필요함.
+
+

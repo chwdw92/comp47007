@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' />
+</head>
+<body>
+	<header>
+		<h1>COMP2013 Project - Dice Game by Chiho Won</h1>
+		<link href='styles/styles.css' type='text/css' rel='stylesheet' />
+	</header>
+	<main>
+		<section>
+			<h2>Dice Game</h2>
+			<!--main game rendering div-->
+			<!--개인 노트: 여기에다가 각 round마다 roudn1, 2,3 정보 표시하고 그리고 게임 마지막에는 winner정보 표시하기-->
+			<div class="result">Start a Game!</div>  
+			<div>
+				<!--main user-->
+				<div>
+					<p>Player1: You</p>
+					<p>Total Score: <span>0</span></p>
+					<div class='img-container'>
+						
+					</div>
+					<p>This round's score: <span>0</span></p>
+				</div>
+				
+				<!--opponent: computer-->
+				<div>
+					<p>Player2: Computer</p>
+					<p>Total Score: <span>0</span></p>
+					<div class='img-container'>
+						<img class='' src='imgs/dice.png' />
+					</div>
+					<p>This round's score: <span>0</span></p>
+				</div>
+			</div>
+			<!--game buttons div-->
+			<div>
+				<p><button>Start Game</button><button>Reset Game</button></p>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
