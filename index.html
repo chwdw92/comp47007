@@ -1,45 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
 	<meta charset='UTF-8' />
+	<link href='styles/dice-game-styles.css' type='text/css' rel='stylesheet' />
+	<title>COMP2013 Project - Dice Game by Chiho Won</title>
 </head>
 <body>
-	<header>
-		<h1>COMP2013 Project - Dice Game by Chiho Won</h1>
-		<link href='styles/styles.css' type='text/css' rel='stylesheet' />
-	</header>
-	<main>
-		<section>
-			<h2>Dice Game</h2>
-			<!--main game rendering div-->
-			<!--개인 노트: 여기에다가 각 round마다 roudn1, 2,3 정보 표시하고 그리고 게임 마지막에는 winner정보 표시하기-->
-			<div class="result">Start a Game!</div>  
-			<div>
-				<!--main user-->
+	<div class='wrapper'>
+		<header>
+			<h1>COMP2013 Project - Dice Game by Chiho Won</h1>
+		</header>
+		<hr/>
+		<main>
+			<section class="dice-game-sec">
+				<h2>Dice Game</h2>
+				<!--main game rendering div-->
+			
+				<div class="result">Start a Game!</div>  
 				<div>
-					<p>Player1: You</p>
-					<p>Total Score: <span>0</span></p>
-					<div class='img-container'>
-						
+					<!--main user-->
+					<div class='player'>
+						<p class='name'><span>Player1:</span> You</p>
+						<p><span>Total Score:</span> <span class='pl1-stage-score'>0</span></p>
+						<div class='dice-sec'>
+							<p><span>Dice#1</span></p>
+							<div class='img-container'>
+								<img alt="dice1" src="imgs/dice1.png" />
+								<img alt="dice2" src="imgs/dice2.png" />
+								<img alt="dice3" src="imgs/dice3.png" />
+								<img alt="dice4" src="imgs/dice4.png" />
+								<img alt="dice5" src="imgs/dice5.png" />
+								<img alt="dice6" src="imgs/dice6.png" />
+							</div>
+						</div>
+						<div class='dice-sec'>
+							<p><span>Dice#2</span></p>
+							<div class='img-container'>
+								<img alt="dice1" src="imgs/dice1.png" />
+								<img alt="dice2" src="imgs/dice2.png" />
+								<img alt="dice3" src="imgs/dice3.png" />
+								<img alt="dice4" src="imgs/dice4.png" />
+								<img alt="dice5" src="imgs/dice5.png" />
+								<img alt="dice6" src="imgs/dice6.png" />
+							</div>
+						</div>
+						<p><span>This round's score:</span> <span class='pl1-round-score'>0</span></p>
 					</div>
-					<p>This round's score: <span>0</span></p>
-				</div>
-				
-				<!--opponent: computer-->
-				<div>
-					<p>Player2: Computer</p>
-					<p>Total Score: <span>0</span></p>
-					<div class='img-container'>
-						<img class='' src='imgs/dice.png' />
+					<hr/>
+					<!--opponent: computer-->
+					<div class='player'>
+						<p class='name'><span>Player2:</span> Computer</p>
+						<p><span>Total Score:</span> <span class='pl2-stage-score'>0</span></p>
+						<div class='dice-sec'>
+							<p><span>Dice#1</span></p>
+							<div class='img-container'>
+								<img alt="dice1" src="imgs/dice1.png" />
+								<img alt="dice2" src="imgs/dice2.png" />
+								<img alt="dice3" src="imgs/dice3.png" />
+								<img alt="dice4" src="imgs/dice4.png" />
+								<img alt="dice5" src="imgs/dice5.png" />
+								<img alt="dice6" src="imgs/dice6.png" />
+							
+							</div>
+						</div>
+						<div class='dice-sec'>
+							<p><span>Dice#2</span></p>
+							<div class='img-container'>
+								<img alt="dice1" src="imgs/dice1.png" />
+								<img alt="dice2" src="imgs/dice2.png" />
+								<img alt="dice3" src="imgs/dice3.png" />
+								<img alt="dice4" src="imgs/dice4.png" />
+								<img alt="dice5" src="imgs/dice5.png" />
+								<img alt="dice6" src="imgs/dice6.png" />
+							
+							</div>
+						</div>
+						<p><span>This round's score:</span> <span class='pl2-round-score'>0</span></p>
 					</div>
-					<p>This round's score: <span>0</span></p>
 				</div>
-			</div>
-			<!--game buttons div-->
-			<div>
-				<p><button>Start Game</button><button>Reset Game</button></p>
-			</div>
-		</section>
-	</main>
+				<hr/>
+				<!--game buttons div-->
+				<div class='btn-sec'>
+					<p><button class='dice-game-start-btn'>Start Game</button><button class='dice-game-reset-btn'>Reset Game</button></p>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src='js/dice-game.js'></script>
 </body>
 </html>
